@@ -1,4 +1,5 @@
 -- create muna ng new database name learnItDb
+-- sql server version 2018
 
 --for the registration form
 CREATE TABLE user_table(
