@@ -1,0 +1,14 @@
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\bin\Debug\learnIT.exe.config
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\bin\Debug\learnIT.exe
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\bin\Debug\learnIT.pdb
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\bin\Debug\Dapper.dll
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\bin\Debug\Dapper.xml
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\obj\Debug\learnIT.csproj.AssemblyReference.cache
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\obj\Debug\learnIT.Register.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\obj\Debug\learnIT.Properties.Resources.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\obj\Debug\learnIT.csproj.GenerateResource.cache
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\obj\Debug\learnIT.csproj.CoreCompileInputs.cache
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\obj\Debug\learnIT.exe
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\obj\Debug\learnIT.pdb
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\obj\Debug\learnIT.Forms.GettingStarted.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSytem\learnIT\obj\Debug\learnIT.Forms.Dashboard.resources
