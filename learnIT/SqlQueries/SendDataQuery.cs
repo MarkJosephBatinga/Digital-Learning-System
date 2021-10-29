@@ -8,6 +8,19 @@ namespace learnIT.SqlQueries
 {
     class SendDataQuery
     {
+        public static string DashBoardQuery(int id)
+        {
+            return $"SELECT first_name FROM user_table WHERE id = {id};";
+        }
+
+        public static string LoginQuery(List<string> userData)
+        {
+            string role = userData[0];              //ValidData[4]
+            string email = userData[1];         //ValidData[0]
+            string password = userData[2];        //ValidData[1]
+            return $"SELECT id FROM user_table WHERE email = '{email}' AND user_password = (HASHBYTES('SHA2_512', '{password}')) AND user_role = '{role}';";
+        }
+
         public static string SendDataQueryString(List<string> userData)
         {
             string last_name = userData[0];         //ValidData[0]

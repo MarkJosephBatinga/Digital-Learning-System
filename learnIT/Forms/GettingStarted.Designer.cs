@@ -60,26 +60,32 @@ namespace learnIT.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // submitProfile
             // 
+            this.submitProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.submitProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitProfile.Font = new System.Drawing.Font("Raleway", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.submitProfile.Location = new System.Drawing.Point(319, 648);
+            this.submitProfile.ForeColor = System.Drawing.Color.White;
+            this.submitProfile.Location = new System.Drawing.Point(268, 640);
             this.submitProfile.Name = "submitProfile";
-            this.submitProfile.Size = new System.Drawing.Size(131, 49);
+            this.submitProfile.Size = new System.Drawing.Size(217, 49);
             this.submitProfile.TabIndex = 0;
             this.submitProfile.Text = "Submit";
-            this.submitProfile.UseVisualStyleBackColor = true;
+            this.submitProfile.UseVisualStyleBackColor = false;
             this.submitProfile.Click += new System.EventHandler(this.submitProfile_Click);
             // 
             // textBoxPhone
             // 
             this.textBoxPhone.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPhone.Location = new System.Drawing.Point(432, 299);
+            this.textBoxPhone.Location = new System.Drawing.Point(432, 298);
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(211, 26);
             this.textBoxPhone.TabIndex = 4;
@@ -105,7 +111,7 @@ namespace learnIT.Forms
             this.textBoxProvince.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxProvince.Location = new System.Drawing.Point(107, 542);
             this.textBoxProvince.Name = "textBoxProvince";
-            this.textBoxProvince.Size = new System.Drawing.Size(211, 26);
+            this.textBoxProvince.Size = new System.Drawing.Size(240, 26);
             this.textBoxProvince.TabIndex = 7;
             // 
             // textBoxZipCode
@@ -120,22 +126,22 @@ namespace learnIT.Forms
             // 
             this.labelYearLevel.AutoSize = true;
             this.labelYearLevel.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelYearLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.labelYearLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelYearLevel.Location = new System.Drawing.Point(102, 142);
             this.labelYearLevel.Name = "labelYearLevel";
-            this.labelYearLevel.Size = new System.Drawing.Size(120, 25);
+            this.labelYearLevel.Size = new System.Drawing.Size(128, 25);
             this.labelYearLevel.TabIndex = 9;
-            this.labelYearLevel.Text = "Year Level";
+            this.labelYearLevel.Text = "Year Level :";
             this.labelYearLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.label2.Location = new System.Drawing.Point(427, 142);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.label2.Location = new System.Drawing.Point(429, 142);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 25);
+            this.label2.Size = new System.Drawing.Size(107, 25);
             this.label2.TabIndex = 10;
             this.label2.Text = "Birthday :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -144,7 +150,7 @@ namespace learnIT.Forms
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.label3.Location = new System.Drawing.Point(102, 259);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 25);
@@ -156,8 +162,8 @@ namespace learnIT.Forms
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.label4.Location = new System.Drawing.Point(427, 259);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.label4.Location = new System.Drawing.Point(429, 259);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(170, 25);
             this.label4.TabIndex = 12;
@@ -168,10 +174,10 @@ namespace learnIT.Forms
             // 
             this.labelStreet.AutoSize = true;
             this.labelStreet.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStreet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelStreet.Location = new System.Drawing.Point(103, 419);
+            this.labelStreet.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.labelStreet.Location = new System.Drawing.Point(102, 415);
             this.labelStreet.Name = "labelStreet";
-            this.labelStreet.Size = new System.Drawing.Size(65, 22);
+            this.labelStreet.Size = new System.Drawing.Size(67, 26);
             this.labelStreet.TabIndex = 13;
             this.labelStreet.Text = "Street";
             // 
@@ -179,10 +185,10 @@ namespace learnIT.Forms
             // 
             this.labelTown.AutoSize = true;
             this.labelTown.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelTown.Location = new System.Drawing.Point(428, 419);
+            this.labelTown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.labelTown.Location = new System.Drawing.Point(427, 415);
             this.labelTown.Name = "labelTown";
-            this.labelTown.Size = new System.Drawing.Size(107, 22);
+            this.labelTown.Size = new System.Drawing.Size(108, 26);
             this.labelTown.TabIndex = 14;
             this.labelTown.Text = "Town/City";
             // 
@@ -190,10 +196,10 @@ namespace learnIT.Forms
             // 
             this.labelProvince.AutoSize = true;
             this.labelProvince.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelProvince.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelProvince.Location = new System.Drawing.Point(103, 517);
+            this.labelProvince.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.labelProvince.Location = new System.Drawing.Point(102, 513);
             this.labelProvince.Name = "labelProvince";
-            this.labelProvince.Size = new System.Drawing.Size(89, 22);
+            this.labelProvince.Size = new System.Drawing.Size(91, 26);
             this.labelProvince.TabIndex = 15;
             this.labelProvince.Text = "Province";
             // 
@@ -201,10 +207,10 @@ namespace learnIT.Forms
             // 
             this.labelZipcode.AutoSize = true;
             this.labelZipcode.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelZipcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelZipcode.Location = new System.Drawing.Point(429, 517);
+            this.labelZipcode.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.labelZipcode.Location = new System.Drawing.Point(427, 513);
             this.labelZipcode.Name = "labelZipcode";
-            this.labelZipcode.Size = new System.Drawing.Size(95, 22);
+            this.labelZipcode.Size = new System.Drawing.Size(97, 26);
             this.labelZipcode.TabIndex = 16;
             this.labelZipcode.Text = "Zip-Code";
             // 
@@ -213,7 +219,7 @@ namespace learnIT.Forms
             this.birthDate.CustomFormat = "";
             this.birthDate.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.birthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.birthDate.Location = new System.Drawing.Point(432, 185);
+            this.birthDate.Location = new System.Drawing.Point(432, 184);
             this.birthDate.Name = "birthDate";
             this.birthDate.Size = new System.Drawing.Size(211, 26);
             this.birthDate.TabIndex = 17;
@@ -224,7 +230,7 @@ namespace learnIT.Forms
             this.radioButtonMale.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButtonMale.Location = new System.Drawing.Point(107, 299);
             this.radioButtonMale.Name = "radioButtonMale";
-            this.radioButtonMale.Size = new System.Drawing.Size(65, 23);
+            this.radioButtonMale.Size = new System.Drawing.Size(66, 26);
             this.radioButtonMale.TabIndex = 18;
             this.radioButtonMale.TabStop = true;
             this.radioButtonMale.Text = "Male";
@@ -234,9 +240,9 @@ namespace learnIT.Forms
             // 
             this.radioButtonFemale.AutoSize = true;
             this.radioButtonFemale.Font = new System.Drawing.Font("Raleway", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonFemale.Location = new System.Drawing.Point(202, 299);
+            this.radioButtonFemale.Location = new System.Drawing.Point(195, 299);
             this.radioButtonFemale.Name = "radioButtonFemale";
-            this.radioButtonFemale.Size = new System.Drawing.Size(85, 23);
+            this.radioButtonFemale.Size = new System.Drawing.Size(86, 26);
             this.radioButtonFemale.TabIndex = 19;
             this.radioButtonFemale.TabStop = true;
             this.radioButtonFemale.Text = "Female";
@@ -246,10 +252,10 @@ namespace learnIT.Forms
             // 
             this.labelAddress.AutoSize = true;
             this.labelAddress.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelAddress.Location = new System.Drawing.Point(102, 381);
+            this.labelAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.labelAddress.Location = new System.Drawing.Point(102, 376);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(107, 25);
+            this.labelAddress.Size = new System.Drawing.Size(105, 25);
             this.labelAddress.TabIndex = 20;
             this.labelAddress.Text = "Address :";
             // 
@@ -264,7 +270,7 @@ namespace learnIT.Forms
             "Fourth Year"});
             this.comboBoxYearLevel.Location = new System.Drawing.Point(107, 184);
             this.comboBoxYearLevel.Name = "comboBoxYearLevel";
-            this.comboBoxYearLevel.Size = new System.Drawing.Size(240, 27);
+            this.comboBoxYearLevel.Size = new System.Drawing.Size(240, 30);
             this.comboBoxYearLevel.TabIndex = 21;
             // 
             // errorLabelYearLevel
@@ -395,11 +401,11 @@ namespace learnIT.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Raleway", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.label1.Location = new System.Drawing.Point(211, 54);
+            this.label1.Font = new System.Drawing.Font("Raleway", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.label1.Location = new System.Drawing.Point(100, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(365, 37);
+            this.label1.Size = new System.Drawing.Size(401, 48);
             this.label1.TabIndex = 30;
             this.label1.Text = "Let\'s get you started !!!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -411,29 +417,51 @@ namespace learnIT.Forms
             this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.welcomeLabel.Location = new System.Drawing.Point(87, 143);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(493, 56);
+            this.welcomeLabel.Size = new System.Drawing.Size(493, 66);
             this.welcomeLabel.TabIndex = 33;
             this.welcomeLabel.Text = "Welcome to learnIT,";
             // 
             // labelName
             // 
             this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelName.ForeColor = System.Drawing.Color.White;
+            this.labelName.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.labelName.Location = new System.Drawing.Point(467, 220);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(270, 56);
+            this.labelName.Size = new System.Drawing.Size(274, 66);
             this.labelName.TabIndex = 34;
             this.labelName.Text = "UserName";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.label5.Location = new System.Drawing.Point(105, 35);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(192, 66);
+            this.label5.TabIndex = 36;
+            this.label5.Text = "learnIT";
+            // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::learnIT.Properties.Resources.undraw_Save_to_bookmarks_re_8ajf;
-            this.pictureBox2.Location = new System.Drawing.Point(95, 329);
+            this.pictureBox2.Image = global::learnIT.Properties.Resources.undraw_choose_re_7d5a;
+            this.pictureBox2.Location = new System.Drawing.Point(98, 337);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(642, 489);
-            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.Size = new System.Drawing.Size(623, 469);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 37;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::learnIT.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 35;
+            this.pictureBox1.TabStop = false;
             // 
             // GettingStarted
             // 
@@ -441,16 +469,21 @@ namespace learnIT.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(209)))), ((int)(((byte)(226)))));
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.labelName);
             this.Controls.Add(this.welcomeLabel);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(1600, 900);
+            this.MinimumSize = new System.Drawing.Size(1600, 900);
             this.Name = "GettingStarted";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "learnIT";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,8 +520,10 @@ namespace learnIT.Forms
         private System.Windows.Forms.Label errorLabelZipcode;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

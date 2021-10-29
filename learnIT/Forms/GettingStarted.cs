@@ -24,7 +24,7 @@ namespace learnIT.Forms
         List<string> UserProfile = new List<string>();
 
         //Store the name of the user
-        string Globalname = "";
+        int GlobalId;
 
         //Main Form
         public GettingStarted(int id, string name)
@@ -41,7 +41,7 @@ namespace learnIT.Forms
             labelName.Text = name;
 
             //store the name to the global variable 
-            Globalname = name;
+            GlobalId = id;
 
 
             Console.WriteLine(UserProfileInt[0]);
@@ -135,7 +135,7 @@ namespace learnIT.Forms
                 sendProfile.SendUserProfileToDatabase(UserProfile, UserProfileInt, Phone);
 
                 //Reference to a new dashboard form and send the first name of the user
-                Dashboard dash = new Dashboard(Globalname);
+                Dashboard dash = new Dashboard(GlobalId);
                 //hide the current form
                 this.Hide();
                 //Open the dashboard form

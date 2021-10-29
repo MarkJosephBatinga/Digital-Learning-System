@@ -1,4 +1,5 @@
-﻿using System;
+﻿using learnIT.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,20 @@ namespace learnIT.Forms
 {
     public partial class Dashboard : Form
     {
-        public Dashboard(string name)
+        GetData GetUserProfile = new GetData();
+
+        public Dashboard(int id)
         {
             InitializeComponent();
-            labelDashbordName.Text = $"dashboard of {name}";
+            var User = GetUserProfile.DashboardLogin(id);
+            labelDashbordName.Text = $"Welcome Back, {User.Item1}!!";
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.ShowDialog();
         }
     }
 }

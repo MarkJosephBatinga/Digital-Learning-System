@@ -15,10 +15,9 @@ namespace learnIT
         [STAThread]
         static void Main()
         {
-            int v = 0;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Register());
+            Application.Run(new Login());
         }
     }
 }
