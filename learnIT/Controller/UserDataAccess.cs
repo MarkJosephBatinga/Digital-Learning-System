@@ -45,6 +45,20 @@ namespace learnIT.Controller
             }
         }
 
+        //Profile Access
+        public List<UserProfile> ProfileAccess(int id)
+        {
+            List<UserProfile> LoginUser = new List<UserProfile>();
+
+            //open the connection string to connect to the database
+            using (IDbConnection conn = new System.Data.SqlClient.SqlConnection(Helper.ConnValue("database")))
+            {
+                //Create a new Query and get the string query from Sql Queries 
+                LoginUser = conn.Query<UserProfile>(SendDataQuery.ProfileQuery(id)).ToList();
+                Console.WriteLine("Dashboard login Successfull");
+                return LoginUser;
+            }
+        }
 
         //Send the validated user data that is inputed in the register form to the database
         public void SendUserDataToDatabase(List<string> User)

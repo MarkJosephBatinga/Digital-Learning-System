@@ -27,3 +27,4 @@ C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debu
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.exe
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.pdb
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.Properties.Resources.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.Forms.Profile.resources

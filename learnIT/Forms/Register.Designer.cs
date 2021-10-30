@@ -49,16 +49,16 @@ namespace learnIT
             this.errorLabelConPassword = new System.Windows.Forms.Label();
             this.errorLabelRole = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.buttonBack = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBoxFirstName
@@ -100,7 +100,7 @@ namespace learnIT
             this.labelFirstName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelFirstName.Location = new System.Drawing.Point(413, 262);
             this.labelFirstName.Name = "labelFirstName";
-            this.labelFirstName.Size = new System.Drawing.Size(121, 25);
+            this.labelFirstName.Size = new System.Drawing.Size(122, 29);
             this.labelFirstName.TabIndex = 4;
             this.labelFirstName.Text = "First Name";
             // 
@@ -111,7 +111,7 @@ namespace learnIT
             this.labelLastName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelLastName.Location = new System.Drawing.Point(163, 262);
             this.labelLastName.Name = "labelLastName";
-            this.labelLastName.Size = new System.Drawing.Size(120, 25);
+            this.labelLastName.Size = new System.Drawing.Size(121, 29);
             this.labelLastName.TabIndex = 5;
             this.labelLastName.Text = "Last Name";
             // 
@@ -122,7 +122,7 @@ namespace learnIT
             this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelEmail.Location = new System.Drawing.Point(163, 357);
             this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(69, 25);
+            this.labelEmail.Size = new System.Drawing.Size(70, 29);
             this.labelEmail.TabIndex = 6;
             this.labelEmail.Text = "Email";
             // 
@@ -133,7 +133,7 @@ namespace learnIT
             this.labelPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelPassword.Location = new System.Drawing.Point(163, 452);
             this.labelPassword.Name = "labelPassword";
-            this.labelPassword.Size = new System.Drawing.Size(110, 25);
+            this.labelPassword.Size = new System.Drawing.Size(111, 29);
             this.labelPassword.TabIndex = 7;
             this.labelPassword.Text = "Password";
             // 
@@ -166,7 +166,7 @@ namespace learnIT
             this.labelConfirmPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelConfirmPassword.Location = new System.Drawing.Point(162, 562);
             this.labelConfirmPassword.Name = "labelConfirmPassword";
-            this.labelConfirmPassword.Size = new System.Drawing.Size(195, 25);
+            this.labelConfirmPassword.Size = new System.Drawing.Size(196, 29);
             this.labelConfirmPassword.TabIndex = 10;
             this.labelConfirmPassword.Text = "Confirm Password";
             // 
@@ -189,11 +189,11 @@ namespace learnIT
             // labelSignUp
             // 
             this.labelSignUp.AutoSize = true;
-            this.labelSignUp.Font = new System.Drawing.Font("Raleway", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelSignUp.Font = new System.Drawing.Font("Raleway Black", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.labelSignUp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelSignUp.Location = new System.Drawing.Point(322, 143);
             this.labelSignUp.Name = "labelSignUp";
-            this.labelSignUp.Size = new System.Drawing.Size(157, 41);
+            this.labelSignUp.Size = new System.Drawing.Size(161, 48);
             this.labelSignUp.TabIndex = 18;
             this.labelSignUp.Text = "SIGN UP";
             this.labelSignUp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -276,49 +276,59 @@ namespace learnIT
             this.panel1.Size = new System.Drawing.Size(755, 865);
             this.panel1.TabIndex = 25;
             // 
-            // label2
+            // pictureBox2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
-            this.label2.Location = new System.Drawing.Point(105, 35);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(192, 66);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "learnIT";
+            this.pictureBox2.Image = global::learnIT.Properties.Resources.undraw_unlock__24_mb;
+            this.pictureBox2.Location = new System.Drawing.Point(122, 307);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(582, 511);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 8;
+            this.pictureBox2.TabStop = false;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Raleway ExtraBold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.label4.Location = new System.Drawing.Point(111, 216);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 66);
+            this.label4.Size = new System.Drawing.Size(164, 66);
             this.label4.TabIndex = 7;
             this.label4.Text = "Meets";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Raleway ExtraBold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.label3.Location = new System.Drawing.Point(111, 137);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(410, 66);
+            this.label3.Size = new System.Drawing.Size(404, 66);
             this.label3.TabIndex = 6;
             this.label3.Text = "And Productivity";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Raleway ExtraBold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.label1.Location = new System.Drawing.Point(111, 65);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 66);
+            this.label1.Size = new System.Drawing.Size(390, 66);
             this.label1.TabIndex = 5;
             this.label1.Text = "Where Learning";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Raleway Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.label2.Location = new System.Drawing.Point(105, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(198, 66);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "learnIT";
             // 
             // buttonBack
             // 
@@ -346,16 +356,6 @@ namespace learnIT
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::learnIT.Properties.Resources.undraw_unlock__24_mb;
-            this.pictureBox2.Location = new System.Drawing.Point(122, 307);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(582, 511);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
             // 
             // Register
             // 
@@ -393,8 +393,8 @@ namespace learnIT
             this.Text = "learnIT";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

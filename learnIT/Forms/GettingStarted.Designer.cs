@@ -125,11 +125,11 @@ namespace learnIT.Forms
             // labelYearLevel
             // 
             this.labelYearLevel.AutoSize = true;
-            this.labelYearLevel.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelYearLevel.Font = new System.Drawing.Font("Raleway ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelYearLevel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelYearLevel.Location = new System.Drawing.Point(102, 142);
             this.labelYearLevel.Name = "labelYearLevel";
-            this.labelYearLevel.Size = new System.Drawing.Size(128, 25);
+            this.labelYearLevel.Size = new System.Drawing.Size(130, 29);
             this.labelYearLevel.TabIndex = 9;
             this.labelYearLevel.Text = "Year Level :";
             this.labelYearLevel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -137,11 +137,11 @@ namespace learnIT.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Raleway ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.label2.Location = new System.Drawing.Point(429, 142);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 25);
+            this.label2.Size = new System.Drawing.Size(110, 29);
             this.label2.TabIndex = 10;
             this.label2.Text = "Birthday :";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,11 +149,11 @@ namespace learnIT.Forms
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Raleway ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.label3.Location = new System.Drawing.Point(102, 259);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(98, 25);
+            this.label3.Size = new System.Drawing.Size(100, 29);
             this.label3.TabIndex = 11;
             this.label3.Text = "Gender :";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -161,11 +161,11 @@ namespace learnIT.Forms
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Raleway ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.label4.Location = new System.Drawing.Point(429, 259);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 25);
+            this.label4.Size = new System.Drawing.Size(172, 29);
             this.label4.TabIndex = 12;
             this.label4.Text = "Phone Number:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -251,11 +251,11 @@ namespace learnIT.Forms
             // labelAddress
             // 
             this.labelAddress.AutoSize = true;
-            this.labelAddress.Font = new System.Drawing.Font("Raleway", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelAddress.Font = new System.Drawing.Font("Raleway ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelAddress.Location = new System.Drawing.Point(102, 376);
             this.labelAddress.Name = "labelAddress";
-            this.labelAddress.Size = new System.Drawing.Size(105, 25);
+            this.labelAddress.Size = new System.Drawing.Size(107, 29);
             this.labelAddress.TabIndex = 20;
             this.labelAddress.Text = "Address :";
             // 
@@ -401,11 +401,11 @@ namespace learnIT.Forms
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Raleway", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Raleway ExtraBold", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.label1.Location = new System.Drawing.Point(100, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(401, 48);
+            this.label1.Size = new System.Drawing.Size(404, 48);
             this.label1.TabIndex = 30;
             this.label1.Text = "Let\'s get you started !!!";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -413,33 +413,35 @@ namespace learnIT.Forms
             // welcomeLabel
             // 
             this.welcomeLabel.AutoSize = true;
-            this.welcomeLabel.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.welcomeLabel.Font = new System.Drawing.Font("Raleway Black", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.welcomeLabel.Location = new System.Drawing.Point(87, 143);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(493, 66);
+            this.welcomeLabel.Size = new System.Drawing.Size(492, 66);
             this.welcomeLabel.TabIndex = 33;
             this.welcomeLabel.Text = "Welcome to learnIT,";
             // 
             // labelName
             // 
-            this.labelName.AutoSize = true;
-            this.labelName.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelName.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.labelName.Font = new System.Drawing.Font("Raleway Black", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelName.Location = new System.Drawing.Point(467, 220);
+            this.labelName.Location = new System.Drawing.Point(150, 220);
             this.labelName.Name = "labelName";
-            this.labelName.Size = new System.Drawing.Size(274, 66);
+            this.labelName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.labelName.Size = new System.Drawing.Size(591, 66);
             this.labelName.TabIndex = 34;
             this.labelName.Text = "UserName";
+            this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Raleway Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.label5.Location = new System.Drawing.Point(105, 35);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 66);
+            this.label5.Size = new System.Drawing.Size(198, 66);
             this.label5.TabIndex = 36;
             this.label5.Text = "learnIT";
             // 

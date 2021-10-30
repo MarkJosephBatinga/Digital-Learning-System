@@ -143,6 +143,26 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap notify {
+            get {
+                object obj = ResourceManager.GetObject("notify", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profile_user {
+            get {
+                object obj = ResourceManager.GetObject("profile-user", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap settings {
             get {
                 object obj = ResourceManager.GetObject("settings", resourceCulture);
@@ -166,6 +186,16 @@ namespace learnIT.Properties {
         internal static System.Drawing.Bitmap undraw_choose_re_7d5a {
             get {
                 object obj = ResourceManager.GetObject("undraw_choose_re_7d5a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_male_avatar_323b {
+            get {
+                object obj = ResourceManager.GetObject("undraw_male_avatar_323b", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

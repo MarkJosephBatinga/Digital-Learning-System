@@ -18,6 +18,7 @@ namespace learnIT.Data
         public string first_name { get; set; }
         public string email { get; set; }
         public string user_password { get; set; }
+        public string user_role { get; set; }
 
     }
 }

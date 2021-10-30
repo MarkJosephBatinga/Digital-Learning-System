@@ -41,14 +41,14 @@ namespace learnIT.Forms
             this.errorMessageRole = new System.Windows.Forms.Label();
             this.errorMessageInvalidUser = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelRegister = new System.Windows.Forms.Label();
             this.buttonRegister = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -89,7 +89,7 @@ namespace learnIT.Forms
             "Student"});
             this.comboBoxRole.Location = new System.Drawing.Point(1117, 302);
             this.comboBoxRole.Name = "comboBoxRole";
-            this.comboBoxRole.Size = new System.Drawing.Size(166, 30);
+            this.comboBoxRole.Size = new System.Drawing.Size(166, 34);
             this.comboBoxRole.TabIndex = 2;
             // 
             // textBoxEmail
@@ -126,11 +126,11 @@ namespace learnIT.Forms
             // labelLogin
             // 
             this.labelLogin.AutoSize = true;
-            this.labelLogin.Font = new System.Drawing.Font("Raleway", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelLogin.Font = new System.Drawing.Font("Raleway Black", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelLogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
             this.labelLogin.Location = new System.Drawing.Point(1127, 245);
             this.labelLogin.Name = "labelLogin";
-            this.labelLogin.Size = new System.Drawing.Size(142, 44);
+            this.labelLogin.Size = new System.Drawing.Size(148, 52);
             this.labelLogin.TabIndex = 6;
             this.labelLogin.Text = "LOG IN";
             // 
@@ -141,7 +141,7 @@ namespace learnIT.Forms
             this.errorMessageEmail.ForeColor = System.Drawing.Color.Red;
             this.errorMessageEmail.Location = new System.Drawing.Point(1094, 381);
             this.errorMessageEmail.Name = "errorMessageEmail";
-            this.errorMessageEmail.Size = new System.Drawing.Size(160, 18);
+            this.errorMessageEmail.Size = new System.Drawing.Size(160, 21);
             this.errorMessageEmail.TabIndex = 7;
             this.errorMessageEmail.Text = "error message email";
             // 
@@ -152,7 +152,7 @@ namespace learnIT.Forms
             this.errorMessagePassword.ForeColor = System.Drawing.Color.Red;
             this.errorMessagePassword.Location = new System.Drawing.Point(1132, 465);
             this.errorMessagePassword.Name = "errorMessagePassword";
-            this.errorMessagePassword.Size = new System.Drawing.Size(191, 18);
+            this.errorMessagePassword.Size = new System.Drawing.Size(190, 21);
             this.errorMessagePassword.TabIndex = 8;
             this.errorMessagePassword.Text = "error message password";
             // 
@@ -163,7 +163,7 @@ namespace learnIT.Forms
             this.errorMessageRole.ForeColor = System.Drawing.Color.Red;
             this.errorMessageRole.Location = new System.Drawing.Point(1121, 335);
             this.errorMessageRole.Name = "errorMessageRole";
-            this.errorMessageRole.Size = new System.Drawing.Size(148, 18);
+            this.errorMessageRole.Size = new System.Drawing.Size(148, 21);
             this.errorMessageRole.TabIndex = 9;
             this.errorMessageRole.Text = "error message role";
             // 
@@ -174,7 +174,7 @@ namespace learnIT.Forms
             this.errorMessageInvalidUser.ForeColor = System.Drawing.Color.Red;
             this.errorMessageInvalidUser.Location = new System.Drawing.Point(1063, 610);
             this.errorMessageInvalidUser.Name = "errorMessageInvalidUser";
-            this.errorMessageInvalidUser.Size = new System.Drawing.Size(272, 18);
+            this.errorMessageInvalidUser.Size = new System.Drawing.Size(271, 21);
             this.errorMessageInvalidUser.TabIndex = 10;
             this.errorMessageInvalidUser.Text = "Invalid Credentials, Please try again";
             // 
@@ -193,6 +193,70 @@ namespace learnIT.Forms
             this.panel1.Size = new System.Drawing.Size(782, 860);
             this.panel1.TabIndex = 12;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::learnIT.Properties.Resources.undraw_secure_login_pdn4;
+            this.pictureBox2.Location = new System.Drawing.Point(77, 419);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(567, 399);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Raleway ExtraBold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.label4.Location = new System.Drawing.Point(110, 323);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(164, 66);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Meets";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Raleway ExtraBold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.label3.Location = new System.Drawing.Point(110, 244);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(404, 66);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "And Productivity";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Raleway ExtraBold", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.label2.Location = new System.Drawing.Point(110, 172);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(390, 66);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Where Learning";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Raleway Black", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
+            this.label1.Location = new System.Drawing.Point(100, 38);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(198, 66);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "learnIT";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::learnIT.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(30, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // labelRegister
             // 
             this.labelRegister.AutoSize = true;
@@ -200,7 +264,7 @@ namespace learnIT.Forms
             this.labelRegister.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.labelRegister.Location = new System.Drawing.Point(995, 640);
             this.labelRegister.Name = "labelRegister";
-            this.labelRegister.Size = new System.Drawing.Size(259, 29);
+            this.labelRegister.Size = new System.Drawing.Size(260, 29);
             this.labelRegister.TabIndex = 13;
             this.labelRegister.Text = "Don\'t Have An Account ?";
             // 
@@ -218,70 +282,6 @@ namespace learnIT.Forms
             this.buttonRegister.Text = "Sign Up Here";
             this.buttonRegister.UseVisualStyleBackColor = true;
             this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(61)))), ((int)(((byte)(86)))));
-            this.label1.Location = new System.Drawing.Point(105, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 56);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "learnIT";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.label2.Location = new System.Drawing.Point(110, 172);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(401, 66);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Where Learning";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.label3.Location = new System.Drawing.Point(110, 244);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(410, 66);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "And Productivity";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Raleway", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.label4.Location = new System.Drawing.Point(110, 323);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(170, 66);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Meets";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::learnIT.Properties.Resources.undraw_secure_login_pdn4;
-            this.pictureBox2.Location = new System.Drawing.Point(77, 419);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(567, 399);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::learnIT.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 

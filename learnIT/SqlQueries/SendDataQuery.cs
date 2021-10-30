@@ -10,7 +10,12 @@ namespace learnIT.SqlQueries
     {
         public static string DashBoardQuery(int id)
         {
-            return $"SELECT first_name FROM user_table WHERE id = {id};";
+            return $"SELECT last_name, first_name, email, user_role FROM user_table WHERE id = {id};";
+        }
+
+        public static string ProfileQuery(int id)
+        {
+            return $"SELECT * FROM user_profile WHERE id = {id};";
         }
 
         public static string LoginQuery(List<string> userData)
