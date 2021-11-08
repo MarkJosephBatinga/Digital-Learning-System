@@ -29,6 +29,7 @@ namespace learnIT
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.textBoxFirstName = new System.Windows.Forms.TextBox();
             this.textBoxLastName = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
@@ -278,7 +279,7 @@ namespace learnIT
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::learnIT.Properties.Resources.undraw_unlock__24_mb;
+            this.pictureBox2.Image = global::learnIT.Properties.Resources.Register_Pic;
             this.pictureBox2.Location = new System.Drawing.Point(122, 307);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(582, 511);
@@ -338,7 +339,7 @@ namespace learnIT
             this.buttonBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonBack.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.buttonBack.Image = global::learnIT.Properties.Resources.back;
+            this.buttonBack.Image = global::learnIT.Properties.Resources.BackButton;
             this.buttonBack.Location = new System.Drawing.Point(12, 816);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(34, 33);
@@ -349,7 +350,7 @@ namespace learnIT
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::learnIT.Properties.Resources.Logo;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(30, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 79);

@@ -29,6 +29,7 @@ namespace learnIT.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GettingStarted));
             this.submitProfile = new System.Windows.Forms.Button();
             this.textBoxPhone = new System.Windows.Forms.TextBox();
             this.textBoxStreet = new System.Windows.Forms.TextBox();
@@ -415,7 +416,7 @@ namespace learnIT.Forms
             this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.Font = new System.Drawing.Font("Raleway Black", 36F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.welcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.welcomeLabel.Location = new System.Drawing.Point(87, 143);
+            this.welcomeLabel.Location = new System.Drawing.Point(105, 145);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.Size = new System.Drawing.Size(492, 66);
             this.welcomeLabel.TabIndex = 33;
@@ -429,7 +430,7 @@ namespace learnIT.Forms
             this.labelName.Location = new System.Drawing.Point(150, 220);
             this.labelName.Name = "labelName";
             this.labelName.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.labelName.Size = new System.Drawing.Size(591, 66);
+            this.labelName.Size = new System.Drawing.Size(548, 66);
             this.labelName.TabIndex = 34;
             this.labelName.Text = "UserName";
             this.labelName.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -447,7 +448,7 @@ namespace learnIT.Forms
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::learnIT.Properties.Resources.undraw_choose_re_7d5a;
+            this.pictureBox2.Image = global::learnIT.Properties.Resources.GetStart_Pic;
             this.pictureBox2.Location = new System.Drawing.Point(98, 337);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(623, 469);
@@ -457,7 +458,7 @@ namespace learnIT.Forms
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::learnIT.Properties.Resources.Logo;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(30, 25);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(86, 79);

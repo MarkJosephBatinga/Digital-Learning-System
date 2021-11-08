@@ -15,6 +15,59 @@ namespace learnIT.Controller
     //The using statement inside the method is to automatically open and close the connection
     public class UserDataAccess
     {
+        //Update Profile in the User Profile
+        public void UpdateUserProfile(int id, List<string> User, long phone, int zipcode)
+        {
+
+            //open the connection string to connect to the database
+            using (IDbConnection conn = new System.Data.SqlClient.SqlConnection(Helper.ConnValue("database")))
+            {
+                //Create a new Query and get the string query from Sql Queries 
+                conn.Query<UserProfile>(SendDataQuery.UpdateUserProfileQuery(id, User, phone, zipcode)).ToList();
+                Console.WriteLine("Update User Profile Successfull");
+            }
+        }
+
+
+        //Update Profile in the User Table
+        public void UpdateAccessWithPassword(int id, List<string> User)
+        {
+            //open the connection string to connect to the database
+            using (IDbConnection conn = new System.Data.SqlClient.SqlConnection(Helper.ConnValue("database")))
+            {
+                //Create a new Query and get the string query from Sql Queries 
+                conn.Query<UserData>(SendDataQuery.UpdateQueryWithPassword(id, User)).ToList();
+                Console.WriteLine("Update Successfull");
+            }
+        }
+
+        //Update Profile in the User Table
+        public void UpdateAccessWithoutPassword(int id, List<string> User)
+        {
+            //open the connection string to connect to the database
+            using (IDbConnection conn = new System.Data.SqlClient.SqlConnection(Helper.ConnValue("database")))
+            {
+                //Create a new Query and get the string query from Sql Queries 
+                conn.Query<UserData>(SendDataQuery.UpdateQueryWithoutPassword(id, User)).ToList();
+                Console.WriteLine("Update Successfull");
+            }
+        }
+
+        //Access To Get The Password for Edit Profile Form
+        public List<UserData> EditDataAccess(List<string> User)
+        {
+            List<UserData> EditUser = new List<UserData>();
+
+            //open the connection string to connect to the database
+            using (IDbConnection conn = new System.Data.SqlClient.SqlConnection(Helper.ConnValue("database")))
+            {
+                //Create a new Query and get the string query from Sql Queries 
+                EditUser = conn.Query<UserData>(SendDataQuery.EditDataQuery(User)).ToList();
+                Console.WriteLine("Edit Data Search Successfull");
+                return EditUser;
+            }
+        }
+
         //Login Access
         public List<UserData> LoginAccess(List<string> User)
         {

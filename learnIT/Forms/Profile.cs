@@ -1,4 +1,5 @@
-﻿using learnIT.Controller;
+﻿using learnIT.ClassForms;
+using learnIT.Controller;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -61,9 +62,43 @@ namespace learnIT.Forms
 
         private void buttonLogout_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
+            Login form = new Login();
             this.Hide();
-            login.ShowDialog();
+            form.ShowDialog();
+        }
+
+        private void buttonEditProfile_Click(object sender, EventArgs e)
+        {
+            EditProfile form = new EditProfile(Id);
+            this.Hide();
+            form.ShowDialog();
+        }
+
+        private void buttonDashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard form = new Dashboard(Id);
+            this.Hide();
+            form.ShowDialog();
+        }
+
+        private void buttonClass_Click(object sender, EventArgs e)
+        {
+            GetData GetRole = new GetData();
+
+            var User = GetRole.DashboardLogin(Id);
+            string role = User.Item4;
+            if (role == "Admin")
+            {
+                AdminClass form = new AdminClass(Id);
+                this.Hide();
+                form.ShowDialog();
+            }
+            else
+            {
+                StudentClass form = new StudentClass(Id);
+                this.Hide();
+                form.ShowDialog();
+            }
         }
     }
 }

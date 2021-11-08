@@ -8,6 +8,40 @@ namespace learnIT.SqlQueries
 {
     class SendDataQuery
     {
+       
+        public static string EditDataQuery(List<string> userData)
+        {
+            string password = userData[0];              //ValidData[4]
+            string email = userData[1];         //ValidData[0]
+            return $"SELECT id FROM user_table WHERE email = '{email}' AND user_password = (HASHBYTES('SHA2_512', '{password}'));";
+        }
+
+        public static string UpdateQueryWithPassword(int id, List<string> userData)
+        {
+            string lastName = userData[0];              //ValidData[4]
+            string firstName = userData[1];         //ValidData[0]
+            string password = userData[2];
+            return $"UPDATE user_table SET last_name = '{lastName}', first_name = '{firstName}', user_password = (HASHBYTES('SHA2_512', '{password}')) WHERE id = {id};";
+        }
+
+        public static string UpdateQueryWithoutPassword(int id, List<string> userData)
+        {
+            string lastName = userData[0];              //ValidData[4]
+            string firstName = userData[1];         //ValidData[0]
+            return $"UPDATE user_table SET last_name = '{lastName}', first_name = '{firstName}' WHERE id = {id};";
+        }
+
+        public static string UpdateUserProfileQuery(int id, List<string> userData, long phone, int zipcode)
+        {
+            string yearLevel = userData[0];             //ValidData[0]
+            string birthdate = userData[1];             //ValidData[1]
+            string gender = userData[2];                //ValidData[2]
+            string street = userData[3];                //ValidData[3]
+            string town = userData[4];                  //ValidData[4]
+            string province = userData[5];              //ValidData[5]
+            return $" UPDATE user_profile SET year_level='{yearLevel}', birth_date='{birthdate}', gender='{gender}', phone={phone}, add_street='{street}', add_town='{town}', add_province='{province}', add_zipcode={zipcode} WHERE id = {id};";
+        }
+
         public static string DashBoardQuery(int id)
         {
             return $"SELECT last_name, first_name, email, user_role FROM user_table WHERE id = {id};";

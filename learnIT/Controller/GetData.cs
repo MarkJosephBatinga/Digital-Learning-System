@@ -91,5 +91,20 @@ namespace learnIT.Controller
             //default value return 0;
             return null;
         }
+
+        // return the email and password
+        public int EditDataConfig(List<string> InputtedUser)
+        {
+            //store the returned id from GetUSerID method to the new list od UserData
+            User = DatabaseAccess.EditDataAccess(InputtedUser);
+            //check if the list is not empty and return the id
+            foreach (var data in User)
+            {
+                int GetId = data.id;
+                return GetId;
+            }
+            //default value return 0;
+            return 0;
+        }
     }
 }

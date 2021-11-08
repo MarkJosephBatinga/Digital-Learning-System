@@ -29,6 +29,7 @@ namespace learnIT.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.labelEmail = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
             this.comboBoxRole = new System.Windows.Forms.ComboBox();
@@ -41,14 +42,14 @@ namespace learnIT.Forms
             this.errorMessageRole = new System.Windows.Forms.Label();
             this.errorMessageInvalidUser = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.labelRegister = new System.Windows.Forms.Label();
             this.buttonRegister = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -193,16 +194,6 @@ namespace learnIT.Forms
             this.panel1.Size = new System.Drawing.Size(782, 860);
             this.panel1.TabIndex = 12;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::learnIT.Properties.Resources.undraw_secure_login_pdn4;
-            this.pictureBox2.Location = new System.Drawing.Point(77, 419);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(567, 399);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -247,16 +238,6 @@ namespace learnIT.Forms
             this.label1.TabIndex = 1;
             this.label1.Text = "learnIT";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::learnIT.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(86, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // labelRegister
             // 
             this.labelRegister.AutoSize = true;
@@ -282,6 +263,26 @@ namespace learnIT.Forms
             this.buttonRegister.Text = "Sign Up Here";
             this.buttonRegister.UseVisualStyleBackColor = true;
             this.buttonRegister.Click += new System.EventHandler(this.buttonRegister_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::learnIT.Properties.Resources.Login_Pic;
+            this.pictureBox2.Location = new System.Drawing.Point(77, 419);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(567, 399);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 5;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(30, 25);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(86, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 

@@ -1,4 +1,5 @@
-﻿using learnIT.Forms;
+﻿using learnIT.ClassForms;
+using learnIT.Forms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,6 +16,7 @@ namespace learnIT
         [STAThread]
         static void Main()
         {
+            int id = 7;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

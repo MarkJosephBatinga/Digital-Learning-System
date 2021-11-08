@@ -50,10 +50,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassForms\AdminClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassForms\AdminClass.Designer.cs">
+      <DependentUpon>AdminClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassForms\CreateClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassForms\CreateClass.Designer.cs">
+      <DependentUpon>CreateClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassForms\StudentClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassForms\StudentClass.Designer.cs">
+      <DependentUpon>StudentClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class\ClassDataAccess.cs" />
+    <Compile Include="Class\ValidateClass.cs" />
     <Compile Include="Controller\GetData.cs" />
     <Compile Include="Controller\Helper.cs" />
     <Compile Include="Controller\UserDataAccess.cs" />
     <Compile Include="Controller\ValidateNewData.cs" />
+    <Compile Include="Data\UserClass.cs" />
     <Compile Include="Data\UserData.cs" />
     <Compile Include="Data\UserProfile.cs" />
     <Compile Include="Forms\Dashboard.cs">
@@ -61,6 +82,12 @@
     </Compile>
     <Compile Include="Forms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditProfile.Designer.cs">
+      <DependentUpon>EditProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\GettingStarted.cs">
       <SubType>Form</SubType>
@@ -93,9 +120,22 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SqlQueries\ClassQuery.cs" />
     <Compile Include="SqlQueries\SendDataQuery.cs" />
+    <EmbeddedResource Include="ClassForms\AdminClass.resx">
+      <DependentUpon>AdminClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassForms\CreateClass.resx">
+      <DependentUpon>CreateClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassForms\StudentClass.resx">
+      <DependentUpon>StudentClass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\EditProfile.resx">
+      <DependentUpon>EditProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GettingStarted.resx">
       <DependentUpon>GettingStarted.cs</DependentUpon>
@@ -131,55 +171,61 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\CreateClassPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login_Pic.png" />
+  </ItemGroup>
+  <ItemGroup>
     <None Include="Resources\Logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\undraw_secure_login_pdn4.png" />
+    <None Include="Resources\Register_Pic.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\undraw_unlock_-24-mb.png" />
+    <None Include="Resources\GetStart_Pic.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\undraw_choose_re_7d5a.png" />
+    <None Include="Resources\BackButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\exit.png" />
+    <None Include="Resources\NotifButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\undraw_researching_-22-gp.png" />
+    <None Include="Resources\ProfileButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\DashBoardButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\graduation-hat %282%29.png" />
+    <None Include="Resources\ClassButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\graduation-hat %283%29.png" />
+    <None Include="Resources\TaskButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\task.png" />
+    <None Include="Resources\ChatButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\chat %281%29.png" />
+    <None Include="Resources\NotesButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\notes.png" />
+    <None Include="Resources\SettingButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\settings.png" />
+    <None Include="Resources\SignoutButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\back.png" />
+    <None Include="Resources\DS_Panel1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\profile-user.png" />
+    <None Include="Resources\ProfileAvatar.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\notify.png" />
+    <None Include="Resources\CreateClassButton.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\undraw_male_avatar_323b.png" />
+    <None Include="Resources\JoinClassButton.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

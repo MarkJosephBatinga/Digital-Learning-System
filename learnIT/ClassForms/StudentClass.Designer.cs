@@ -1,7 +1,7 @@
 ﻿
-namespace learnIT.Forms
+namespace learnIT.ClassForms
 {
-    partial class Dashboard
+    partial class StudentClass
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace learnIT.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelDashbordName = new System.Windows.Forms.Label();
+            this.labelClasses = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSettings = new System.Windows.Forms.Button();
             this.buttonNotes = new System.Windows.Forms.Button();
@@ -39,25 +39,22 @@ namespace learnIT.Forms
             this.buttonDashboard = new System.Windows.Forms.Button();
             this.learnIt = new System.Windows.Forms.Label();
             this.buttonLogout = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonJoinClass = new System.Windows.Forms.Button();
             this.buttonNotify = new System.Windows.Forms.Button();
             this.buttonProfile = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // labelDashbordName
+            // labelClasses
             // 
-            this.labelDashbordName.AutoSize = true;
-            this.labelDashbordName.Font = new System.Drawing.Font("Raleway ExtraBold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDashbordName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelDashbordName.Location = new System.Drawing.Point(64, 41);
-            this.labelDashbordName.Name = "labelDashbordName";
-            this.labelDashbordName.Size = new System.Drawing.Size(416, 44);
-            this.labelDashbordName.TabIndex = 0;
-            this.labelDashbordName.Text = "Welcome Back, Username";
+            this.labelClasses.AutoSize = true;
+            this.labelClasses.Font = new System.Drawing.Font("Raleway ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelClasses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.labelClasses.Location = new System.Drawing.Point(241, 78);
+            this.labelClasses.Name = "labelClasses";
+            this.labelClasses.Size = new System.Drawing.Size(280, 44);
+            this.labelClasses.TabIndex = 18;
+            this.labelClasses.Text = "Enrolled Classes";
             // 
             // panel1
             // 
@@ -73,7 +70,7 @@ namespace learnIT.Forms
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 862);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 19;
             // 
             // buttonSettings
             // 
@@ -164,7 +161,6 @@ namespace learnIT.Forms
             this.buttonClass.Text = "Classes";
             this.buttonClass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonClass.UseVisualStyleBackColor = true;
-            this.buttonClass.Click += new System.EventHandler(this.buttonClass_Click);
             // 
             // buttonDashboard
             // 
@@ -183,6 +179,7 @@ namespace learnIT.Forms
             this.buttonDashboard.Text = "Dashboard";
             this.buttonDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonDashboard.UseVisualStyleBackColor = true;
+            this.buttonDashboard.Click += new System.EventHandler(this.buttonDashboard_Click);
             // 
             // learnIt
             // 
@@ -212,27 +209,25 @@ namespace learnIT.Forms
             this.buttonLogout.Text = "Sign Out";
             this.buttonLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonLogout.UseVisualStyleBackColor = true;
-            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click_1);
             // 
-            // panel2
+            // buttonJoinClass
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(209)))), ((int)(((byte)(226)))));
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Controls.Add(this.labelDashbordName);
-            this.panel2.Location = new System.Drawing.Point(248, 137);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(864, 256);
-            this.panel2.TabIndex = 2;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::learnIT.Properties.Resources.DS_Panel1;
-            this.pictureBox1.Location = new System.Drawing.Point(560, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(304, 256);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.buttonJoinClass.FlatAppearance.BorderSize = 0;
+            this.buttonJoinClass.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.buttonJoinClass.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.buttonJoinClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonJoinClass.Font = new System.Drawing.Font("Raleway ExtraBold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonJoinClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.buttonJoinClass.Image = global::learnIT.Properties.Resources.JoinClassButton;
+            this.buttonJoinClass.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonJoinClass.Location = new System.Drawing.Point(1150, 16);
+            this.buttonJoinClass.Name = "buttonJoinClass";
+            this.buttonJoinClass.Size = new System.Drawing.Size(233, 64);
+            this.buttonJoinClass.TabIndex = 26;
+            this.buttonJoinClass.Text = "Join Class";
+            this.buttonJoinClass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonJoinClass.UseVisualStyleBackColor = true;
             // 
             // buttonNotify
             // 
@@ -246,7 +241,7 @@ namespace learnIT.Forms
             this.buttonNotify.Location = new System.Drawing.Point(1389, 12);
             this.buttonNotify.Name = "buttonNotify";
             this.buttonNotify.Size = new System.Drawing.Size(79, 68);
-            this.buttonNotify.TabIndex = 4;
+            this.buttonNotify.TabIndex = 8;
             this.buttonNotify.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonNotify.UseVisualStyleBackColor = true;
             // 
@@ -262,50 +257,47 @@ namespace learnIT.Forms
             this.buttonProfile.Location = new System.Drawing.Point(1474, 12);
             this.buttonProfile.Name = "buttonProfile";
             this.buttonProfile.Size = new System.Drawing.Size(79, 68);
-            this.buttonProfile.TabIndex = 3;
+            this.buttonProfile.TabIndex = 7;
             this.buttonProfile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonProfile.UseVisualStyleBackColor = true;
-            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click);
+            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click_1);
             // 
-            // Dashboard
+            // StudentClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.buttonJoinClass);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.labelClasses);
             this.Controls.Add(this.buttonNotify);
             this.Controls.Add(this.buttonProfile);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(1600, 900);
             this.MinimumSize = new System.Drawing.Size(1600, 900);
-            this.Name = "Dashboard";
+            this.Name = "StudentClass";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Dashboard";
+            this.Text = "StudentClass";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label labelDashbordName;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button buttonLogout;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label learnIt;
-        private System.Windows.Forms.Button buttonDashboard;
-        private System.Windows.Forms.Button buttonClass;
-        private System.Windows.Forms.Button buttonTask;
-        private System.Windows.Forms.Button buttonChat;
-        private System.Windows.Forms.Button buttonNotes;
-        private System.Windows.Forms.Button buttonSettings;
-        private System.Windows.Forms.Button buttonProfile;
         private System.Windows.Forms.Button buttonNotify;
+        private System.Windows.Forms.Button buttonProfile;
+        private System.Windows.Forms.Label labelClasses;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button buttonSettings;
+        private System.Windows.Forms.Button buttonNotes;
+        private System.Windows.Forms.Button buttonChat;
+        private System.Windows.Forms.Button buttonTask;
+        private System.Windows.Forms.Button buttonClass;
+        private System.Windows.Forms.Button buttonDashboard;
+        private System.Windows.Forms.Label learnIt;
+        private System.Windows.Forms.Button buttonLogout;
+        private System.Windows.Forms.Button buttonJoinClass;
     }
 }

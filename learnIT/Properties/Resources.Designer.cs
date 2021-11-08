@@ -63,9 +63,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap back {
+        internal static System.Drawing.Bitmap BackButton {
             get {
-                object obj = ResourceManager.GetObject("back", resourceCulture);
+                object obj = ResourceManager.GetObject("BackButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap chat__1_ {
+        internal static System.Drawing.Bitmap ChatButton {
             get {
-                object obj = ResourceManager.GetObject("chat (1)", resourceCulture);
+                object obj = ResourceManager.GetObject("ChatButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap dashboard {
+        internal static System.Drawing.Bitmap ClassButton {
             get {
-                object obj = ResourceManager.GetObject("dashboard", resourceCulture);
+                object obj = ResourceManager.GetObject("ClassButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +93,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap exit {
+        internal static System.Drawing.Bitmap CreateClassButton {
             get {
-                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                object obj = ResourceManager.GetObject("CreateClassButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +103,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap graduation_hat__2_ {
+        internal static System.Drawing.Bitmap CreateClassPic {
             get {
-                object obj = ResourceManager.GetObject("graduation-hat (2)", resourceCulture);
+                object obj = ResourceManager.GetObject("CreateClassPic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,49 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap graduation_hat__3_ {
+        internal static System.Drawing.Bitmap DashBoardButton {
             get {
-                object obj = ResourceManager.GetObject("graduation-hat (3)", resourceCulture);
+                object obj = ResourceManager.GetObject("DashBoardButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DS_Panel1 {
+            get {
+                object obj = ResourceManager.GetObject("DS_Panel1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GetStart_Pic {
+            get {
+                object obj = ResourceManager.GetObject("GetStart_Pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap JoinClassButton {
+            get {
+                object obj = ResourceManager.GetObject("JoinClassButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Login_Pic {
+            get {
+                object obj = ResourceManager.GetObject("Login_Pic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,9 +173,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap notes {
+        internal static System.Drawing.Bitmap NotesButton {
             get {
-                object obj = ResourceManager.GetObject("notes", resourceCulture);
+                object obj = ResourceManager.GetObject("NotesButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -143,9 +183,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap notify {
+        internal static System.Drawing.Bitmap NotifButton {
             get {
-                object obj = ResourceManager.GetObject("notify", resourceCulture);
+                object obj = ResourceManager.GetObject("NotifButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -153,9 +193,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap profile_user {
+        internal static System.Drawing.Bitmap ProfileAvatar {
             get {
-                object obj = ResourceManager.GetObject("profile-user", resourceCulture);
+                object obj = ResourceManager.GetObject("ProfileAvatar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -163,9 +203,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap settings {
+        internal static System.Drawing.Bitmap ProfileButton {
             get {
-                object obj = ResourceManager.GetObject("settings", resourceCulture);
+                object obj = ResourceManager.GetObject("ProfileButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +213,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap task {
+        internal static System.Drawing.Bitmap Register_Pic {
             get {
-                object obj = ResourceManager.GetObject("task", resourceCulture);
+                object obj = ResourceManager.GetObject("Register_Pic", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +223,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap undraw_choose_re_7d5a {
+        internal static System.Drawing.Bitmap SettingButton {
             get {
-                object obj = ResourceManager.GetObject("undraw_choose_re_7d5a", resourceCulture);
+                object obj = ResourceManager.GetObject("SettingButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,9 +233,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap undraw_male_avatar_323b {
+        internal static System.Drawing.Bitmap SignoutButton {
             get {
-                object obj = ResourceManager.GetObject("undraw_male_avatar_323b", resourceCulture);
+                object obj = ResourceManager.GetObject("SignoutButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,29 +243,9 @@ namespace learnIT.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap undraw_researching__22_gp {
+        internal static System.Drawing.Bitmap TaskButton {
             get {
-                object obj = ResourceManager.GetObject("undraw_researching_-22-gp", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap undraw_secure_login_pdn4 {
-            get {
-                object obj = ResourceManager.GetObject("undraw_secure_login_pdn4", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap undraw_unlock__24_mb {
-            get {
-                object obj = ResourceManager.GetObject("undraw_unlock_-24-mb", resourceCulture);
+                object obj = ResourceManager.GetObject("TaskButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
