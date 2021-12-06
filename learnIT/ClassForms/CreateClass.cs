@@ -1,5 +1,7 @@
-﻿using learnIT.Class;
+﻿using learnIT.ChatForms;
+using learnIT.Class;
 using learnIT.Controller;
+using learnIT.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,12 +64,11 @@ namespace learnIT.ClassForms
                 //description 3
                 ClassData.Add(textDescription.Text);
 
-                foreach(var data in ClassData)
-                {
-                    Console.WriteLine(data);
-                }
-
                 ClassAccess.CreateNewClass(Id, ClassData);
+
+                AdminClasses form = new AdminClasses(Id);
+                this.Hide();
+                form.ShowDialog();
             } 
         }
 
@@ -80,7 +81,48 @@ namespace learnIT.ClassForms
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            AdminClass form = new AdminClass(Id);
+            AdminClasses form = new AdminClasses(Id);
+            this.Hide();
+            form.ShowDialog();
+        }
+
+        private void buttonDashboard_Click(object sender, EventArgs e)
+        {
+            Dashboard form = new Dashboard(Id);
+            this.Hide();
+            form.ShowDialog();
+        }
+
+        private void buttonClass_Click(object sender, EventArgs e)
+        {
+            GetData GetRole = new GetData();
+
+            var User = GetRole.DashboardLogin(Id);
+            string role = User.Item4;
+            if (role == "Admin")
+            {
+                AdminClasses form = new AdminClasses(Id);
+                this.Hide();
+                form.ShowDialog();
+            }
+            else
+            {
+                StudentClasses form = new StudentClasses(Id);
+                this.Hide();
+                form.ShowDialog();
+            }
+        }
+
+        private void buttonLogout_Click(object sender, EventArgs e)
+        {
+            Login form = new Login();
+            this.Hide();
+            form.ShowDialog();
+        }
+
+        private void buttonChat_Click(object sender, EventArgs e)
+        {
+            Chatbox form = new Chatbox(Id);
             this.Hide();
             form.ShowDialog();
         }

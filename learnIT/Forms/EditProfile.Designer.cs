@@ -85,6 +85,7 @@ namespace learnIT.Forms
             this.errorMessageStreet = new System.Windows.Forms.Label();
             this.labelEditProfile = new System.Windows.Forms.Label();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.buttonDeleteProfile = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -159,6 +160,7 @@ namespace learnIT.Forms
             this.buttonChat.Text = "Chat";
             this.buttonChat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonChat.UseVisualStyleBackColor = true;
+            this.buttonChat.Click += new System.EventHandler(this.buttonChat_Click);
             // 
             // buttonTask
             // 
@@ -177,6 +179,7 @@ namespace learnIT.Forms
             this.buttonTask.Text = "Tasks";
             this.buttonTask.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonTask.UseVisualStyleBackColor = true;
+            this.buttonTask.Click += new System.EventHandler(this.buttonTask_Click);
             // 
             // buttonClass
             // 
@@ -785,7 +788,7 @@ namespace learnIT.Forms
             this.buttonCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCancel.Font = new System.Drawing.Font("Raleway ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCancel.ForeColor = System.Drawing.Color.White;
-            this.buttonCancel.Location = new System.Drawing.Point(1018, 775);
+            this.buttonCancel.Location = new System.Drawing.Point(964, 775);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(177, 46);
             this.buttonCancel.TabIndex = 58;
@@ -793,12 +796,27 @@ namespace learnIT.Forms
             this.buttonCancel.UseVisualStyleBackColor = false;
             this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
+            // buttonDeleteProfile
+            // 
+            this.buttonDeleteProfile.BackColor = System.Drawing.Color.DarkRed;
+            this.buttonDeleteProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDeleteProfile.Font = new System.Drawing.Font("Raleway ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDeleteProfile.ForeColor = System.Drawing.Color.White;
+            this.buttonDeleteProfile.Location = new System.Drawing.Point(1160, 775);
+            this.buttonDeleteProfile.Name = "buttonDeleteProfile";
+            this.buttonDeleteProfile.Size = new System.Drawing.Size(177, 46);
+            this.buttonDeleteProfile.TabIndex = 59;
+            this.buttonDeleteProfile.Text = "Delete Profile";
+            this.buttonDeleteProfile.UseVisualStyleBackColor = false;
+            this.buttonDeleteProfile.Click += new System.EventHandler(this.buttonDeleteProfile_Click);
+            // 
             // EditProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1584, 861);
+            this.Controls.Add(this.buttonDeleteProfile);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.labelEditProfile);
             this.Controls.Add(this.panel2);
@@ -881,5 +899,6 @@ namespace learnIT.Forms
         private System.Windows.Forms.Label errorMessageTown;
         private System.Windows.Forms.Label errorMessageStreet;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.Button buttonDeleteProfile;
     }
 }

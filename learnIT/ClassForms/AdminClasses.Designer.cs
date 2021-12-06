@@ -1,7 +1,7 @@
 ﻿
 namespace learnIT.ClassForms
 {
-    partial class AdminClass
+    partial class AdminClasses
     {
         /// <summary>
         /// Required designer variable.
@@ -39,10 +39,13 @@ namespace learnIT.ClassForms
             this.learnIt = new System.Windows.Forms.Label();
             this.buttonLogout = new System.Windows.Forms.Button();
             this.labelClasses = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonProfile = new System.Windows.Forms.Button();
             this.buttonCreateClass = new System.Windows.Forms.Button();
             this.buttonNotify = new System.Windows.Forms.Button();
-            this.buttonProfile = new System.Windows.Forms.Button();
+            this.flowLayoutClasses = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,9 +59,10 @@ namespace learnIT.ClassForms
             this.panel1.Controls.Add(this.buttonDashboard);
             this.panel1.Controls.Add(this.learnIt);
             this.panel1.Controls.Add(this.buttonLogout);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 862);
+            this.panel1.Size = new System.Drawing.Size(200, 861);
             this.panel1.TabIndex = 20;
             // 
             // buttonSettings
@@ -114,6 +118,7 @@ namespace learnIT.ClassForms
             this.buttonChat.Text = "Chat";
             this.buttonChat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonChat.UseVisualStyleBackColor = true;
+            this.buttonChat.Click += new System.EventHandler(this.buttonChat_Click);
             // 
             // buttonTask
             // 
@@ -132,6 +137,7 @@ namespace learnIT.ClassForms
             this.buttonTask.Text = "Tasks";
             this.buttonTask.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonTask.UseVisualStyleBackColor = true;
+            this.buttonTask.Click += new System.EventHandler(this.buttonTask_Click);
             // 
             // buttonClass
             // 
@@ -205,11 +211,40 @@ namespace learnIT.ClassForms
             this.labelClasses.AutoSize = true;
             this.labelClasses.Font = new System.Drawing.Font("Raleway ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelClasses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelClasses.Location = new System.Drawing.Point(241, 78);
+            this.labelClasses.Location = new System.Drawing.Point(22, 146);
             this.labelClasses.Name = "labelClasses";
             this.labelClasses.Size = new System.Drawing.Size(272, 44);
             this.labelClasses.TabIndex = 24;
             this.labelClasses.Text = "Created Classes";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.buttonProfile);
+            this.panel2.Controls.Add(this.labelClasses);
+            this.panel2.Controls.Add(this.buttonCreateClass);
+            this.panel2.Controls.Add(this.buttonNotify);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(1384, 218);
+            this.panel2.TabIndex = 26;
+            // 
+            // buttonProfile
+            // 
+            this.buttonProfile.FlatAppearance.BorderSize = 0;
+            this.buttonProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.buttonProfile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.buttonProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProfile.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.buttonProfile.Image = global::learnIT.Properties.Resources.ProfileButton;
+            this.buttonProfile.Location = new System.Drawing.Point(1269, 10);
+            this.buttonProfile.Name = "buttonProfile";
+            this.buttonProfile.Size = new System.Drawing.Size(79, 68);
+            this.buttonProfile.TabIndex = 21;
+            this.buttonProfile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.buttonProfile.UseVisualStyleBackColor = true;
+            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click_1);
             // 
             // buttonCreateClass
             // 
@@ -221,7 +256,7 @@ namespace learnIT.ClassForms
             this.buttonCreateClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.buttonCreateClass.Image = global::learnIT.Properties.Resources.CreateClassButton;
             this.buttonCreateClass.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonCreateClass.Location = new System.Drawing.Point(1116, 16);
+            this.buttonCreateClass.Location = new System.Drawing.Point(911, 10);
             this.buttonCreateClass.Name = "buttonCreateClass";
             this.buttonCreateClass.Size = new System.Drawing.Size(267, 64);
             this.buttonCreateClass.TabIndex = 25;
@@ -239,50 +274,44 @@ namespace learnIT.ClassForms
             this.buttonNotify.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNotify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.buttonNotify.Image = global::learnIT.Properties.Resources.NotifButton;
-            this.buttonNotify.Location = new System.Drawing.Point(1389, 16);
+            this.buttonNotify.Location = new System.Drawing.Point(1184, 10);
             this.buttonNotify.Name = "buttonNotify";
             this.buttonNotify.Size = new System.Drawing.Size(79, 68);
             this.buttonNotify.TabIndex = 22;
             this.buttonNotify.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonNotify.UseVisualStyleBackColor = true;
             // 
-            // buttonProfile
+            // flowLayoutClasses
             // 
-            this.buttonProfile.FlatAppearance.BorderSize = 0;
-            this.buttonProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.buttonProfile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.buttonProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonProfile.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.buttonProfile.Image = global::learnIT.Properties.Resources.ProfileButton;
-            this.buttonProfile.Location = new System.Drawing.Point(1474, 16);
-            this.buttonProfile.Name = "buttonProfile";
-            this.buttonProfile.Size = new System.Drawing.Size(79, 68);
-            this.buttonProfile.TabIndex = 21;
-            this.buttonProfile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonProfile.UseVisualStyleBackColor = true;
-            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click_1);
+            this.flowLayoutClasses.AutoScroll = true;
+            this.flowLayoutClasses.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.flowLayoutClasses.Location = new System.Drawing.Point(200, 224);
+            this.flowLayoutClasses.MaximumSize = new System.Drawing.Size(1384, 637);
+            this.flowLayoutClasses.MinimumSize = new System.Drawing.Size(1384, 637);
+            this.flowLayoutClasses.Name = "flowLayoutClasses";
+            this.flowLayoutClasses.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
+            this.flowLayoutClasses.Size = new System.Drawing.Size(1384, 637);
+            this.flowLayoutClasses.TabIndex = 27;
             // 
-            // AdminClass
+            // AdminClasses
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1584, 861);
-            this.Controls.Add(this.buttonCreateClass);
-            this.Controls.Add(this.labelClasses);
-            this.Controls.Add(this.buttonNotify);
-            this.Controls.Add(this.buttonProfile);
+            this.Controls.Add(this.flowLayoutClasses);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(1600, 900);
             this.MinimumSize = new System.Drawing.Size(1600, 900);
-            this.Name = "AdminClass";
+            this.Name = "AdminClasses";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminClass";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -301,5 +330,7 @@ namespace learnIT.ClassForms
         private System.Windows.Forms.Button buttonProfile;
         private System.Windows.Forms.Label labelClasses;
         private System.Windows.Forms.Button buttonCreateClass;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutClasses;
     }
 }

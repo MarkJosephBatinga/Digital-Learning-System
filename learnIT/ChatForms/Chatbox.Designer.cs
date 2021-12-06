@@ -1,7 +1,7 @@
 ﻿
-namespace learnIT.ClassForms
+namespace learnIT.ChatForms
 {
-    partial class StudentClass
+    partial class Chatbox
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@ namespace learnIT.ClassForms
         /// </summary>
         private void InitializeComponent()
         {
-            this.labelClasses = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.buttonSettings = new System.Windows.Forms.Button();
             this.buttonNotes = new System.Windows.Forms.Button();
@@ -39,22 +38,26 @@ namespace learnIT.ClassForms
             this.buttonDashboard = new System.Windows.Forms.Button();
             this.learnIt = new System.Windows.Forms.Label();
             this.buttonLogout = new System.Windows.Forms.Button();
-            this.buttonJoinClass = new System.Windows.Forms.Button();
-            this.buttonNotify = new System.Windows.Forms.Button();
-            this.buttonProfile = new System.Windows.Forms.Button();
+            this.panelTitle = new System.Windows.Forms.Panel();
+            this.labelChat = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panelName = new System.Windows.Forms.Panel();
+            this.pictureBoxAvatar = new System.Windows.Forms.PictureBox();
+            this.labelSubjectName = new System.Windows.Forms.Label();
+            this.panelSend = new System.Windows.Forms.Panel();
+            this.buttonSend = new System.Windows.Forms.Button();
+            this.textBoxMessage = new System.Windows.Forms.TextBox();
+            this.flowLayoutGroups = new System.Windows.Forms.FlowLayoutPanel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanelMessage = new System.Windows.Forms.TableLayoutPanel();
             this.panel1.SuspendLayout();
+            this.panelTitle.SuspendLayout();
+            this.panelName.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).BeginInit();
+            this.panelSend.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // labelClasses
-            // 
-            this.labelClasses.AutoSize = true;
-            this.labelClasses.Font = new System.Drawing.Font("Raleway ExtraBold", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClasses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelClasses.Location = new System.Drawing.Point(241, 78);
-            this.labelClasses.Name = "labelClasses";
-            this.labelClasses.Size = new System.Drawing.Size(280, 44);
-            this.labelClasses.TabIndex = 18;
-            this.labelClasses.Text = "Enrolled Classes";
             // 
             // panel1
             // 
@@ -67,10 +70,11 @@ namespace learnIT.ClassForms
             this.panel1.Controls.Add(this.buttonDashboard);
             this.panel1.Controls.Add(this.learnIt);
             this.panel1.Controls.Add(this.buttonLogout);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 862);
-            this.panel1.TabIndex = 19;
+            this.panel1.Size = new System.Drawing.Size(200, 861);
+            this.panel1.TabIndex = 2;
             // 
             // buttonSettings
             // 
@@ -143,6 +147,7 @@ namespace learnIT.ClassForms
             this.buttonTask.Text = "Tasks";
             this.buttonTask.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonTask.UseVisualStyleBackColor = true;
+            this.buttonTask.Click += new System.EventHandler(this.buttonTask_Click);
             // 
             // buttonClass
             // 
@@ -161,6 +166,7 @@ namespace learnIT.ClassForms
             this.buttonClass.Text = "Classes";
             this.buttonClass.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonClass.UseVisualStyleBackColor = true;
+            this.buttonClass.Click += new System.EventHandler(this.buttonClass_Click);
             // 
             // buttonDashboard
             // 
@@ -209,86 +215,178 @@ namespace learnIT.ClassForms
             this.buttonLogout.Text = "Sign Out";
             this.buttonLogout.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonLogout.UseVisualStyleBackColor = true;
-            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click_1);
+            this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
-            // buttonJoinClass
+            // panelTitle
             // 
-            this.buttonJoinClass.FlatAppearance.BorderSize = 0;
-            this.buttonJoinClass.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.buttonJoinClass.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.buttonJoinClass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonJoinClass.Font = new System.Drawing.Font("Raleway ExtraBold", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonJoinClass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.buttonJoinClass.Image = global::learnIT.Properties.Resources.JoinClassButton;
-            this.buttonJoinClass.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonJoinClass.Location = new System.Drawing.Point(1150, 16);
-            this.buttonJoinClass.Name = "buttonJoinClass";
-            this.buttonJoinClass.Size = new System.Drawing.Size(233, 64);
-            this.buttonJoinClass.TabIndex = 26;
-            this.buttonJoinClass.Text = "Join Class";
-            this.buttonJoinClass.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonJoinClass.UseVisualStyleBackColor = true;
+            this.panelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(209)))), ((int)(((byte)(226)))));
+            this.panelTitle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTitle.Controls.Add(this.labelChat);
+            this.panelTitle.Controls.Add(this.panel3);
+            this.panelTitle.Location = new System.Drawing.Point(206, 3);
+            this.panelTitle.Name = "panelTitle";
+            this.panelTitle.Size = new System.Drawing.Size(341, 79);
+            this.panelTitle.TabIndex = 3;
             // 
-            // buttonNotify
+            // labelChat
             // 
-            this.buttonNotify.FlatAppearance.BorderSize = 0;
-            this.buttonNotify.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.buttonNotify.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.buttonNotify.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonNotify.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonNotify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.buttonNotify.Image = global::learnIT.Properties.Resources.NotifButton;
-            this.buttonNotify.Location = new System.Drawing.Point(1389, 12);
-            this.buttonNotify.Name = "buttonNotify";
-            this.buttonNotify.Size = new System.Drawing.Size(79, 68);
-            this.buttonNotify.TabIndex = 8;
-            this.buttonNotify.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonNotify.UseVisualStyleBackColor = true;
+            this.labelChat.AutoSize = true;
+            this.labelChat.Font = new System.Drawing.Font("Raleway ExtraBold", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelChat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.labelChat.Location = new System.Drawing.Point(5, 5);
+            this.labelChat.Name = "labelChat";
+            this.labelChat.Size = new System.Drawing.Size(93, 37);
+            this.labelChat.TabIndex = 9;
+            this.labelChat.Text = "Chats";
             // 
-            // buttonProfile
+            // panel3
             // 
-            this.buttonProfile.FlatAppearance.BorderSize = 0;
-            this.buttonProfile.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.buttonProfile.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.buttonProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonProfile.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.buttonProfile.Image = global::learnIT.Properties.Resources.ProfileButton;
-            this.buttonProfile.Location = new System.Drawing.Point(1474, 12);
-            this.buttonProfile.Name = "buttonProfile";
-            this.buttonProfile.Size = new System.Drawing.Size(79, 68);
-            this.buttonProfile.TabIndex = 7;
-            this.buttonProfile.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonProfile.UseVisualStyleBackColor = true;
-            this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click_1);
+            this.panel3.Location = new System.Drawing.Point(353, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1006, 106);
+            this.panel3.TabIndex = 4;
             // 
-            // StudentClass
+            // panelName
+            // 
+            this.panelName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(209)))), ((int)(((byte)(226)))));
+            this.panelName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelName.Controls.Add(this.pictureBoxAvatar);
+            this.panelName.Controls.Add(this.labelSubjectName);
+            this.panelName.Location = new System.Drawing.Point(556, 3);
+            this.panelName.Name = "panelName";
+            this.panelName.Size = new System.Drawing.Size(1016, 79);
+            this.panelName.TabIndex = 4;
+            // 
+            // pictureBoxAvatar
+            // 
+            this.pictureBoxAvatar.Image = global::learnIT.Properties.Resources.group;
+            this.pictureBoxAvatar.Location = new System.Drawing.Point(25, 8);
+            this.pictureBoxAvatar.Name = "pictureBoxAvatar";
+            this.pictureBoxAvatar.Size = new System.Drawing.Size(88, 66);
+            this.pictureBoxAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxAvatar.TabIndex = 9;
+            this.pictureBoxAvatar.TabStop = false;
+            // 
+            // labelSubjectName
+            // 
+            this.labelSubjectName.AutoSize = true;
+            this.labelSubjectName.Font = new System.Drawing.Font("Raleway ExtraBold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelSubjectName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.labelSubjectName.Location = new System.Drawing.Point(110, 28);
+            this.labelSubjectName.Name = "labelSubjectName";
+            this.labelSubjectName.Size = new System.Drawing.Size(242, 34);
+            this.labelSubjectName.TabIndex = 5;
+            this.labelSubjectName.Text = "Technopreneurship";
+            // 
+            // panelSend
+            // 
+            this.panelSend.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(209)))), ((int)(((byte)(226)))));
+            this.panelSend.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelSend.Controls.Add(this.buttonSend);
+            this.panelSend.Controls.Add(this.textBoxMessage);
+            this.panelSend.Location = new System.Drawing.Point(556, 762);
+            this.panelSend.Name = "panelSend";
+            this.panelSend.Size = new System.Drawing.Size(1016, 87);
+            this.panelSend.TabIndex = 7;
+            // 
+            // buttonSend
+            // 
+            this.buttonSend.FlatAppearance.BorderSize = 0;
+            this.buttonSend.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSend.Image = global::learnIT.Properties.Resources.send;
+            this.buttonSend.Location = new System.Drawing.Point(924, 20);
+            this.buttonSend.Name = "buttonSend";
+            this.buttonSend.Size = new System.Drawing.Size(79, 45);
+            this.buttonSend.TabIndex = 1;
+            this.buttonSend.UseVisualStyleBackColor = true;
+            this.buttonSend.Click += new System.EventHandler(this.buttonSend_Click);
+            // 
+            // textBoxMessage
+            // 
+            this.textBoxMessage.Font = new System.Drawing.Font("Raleway", 9.749999F, System.Drawing.FontStyle.Italic);
+            this.textBoxMessage.Location = new System.Drawing.Point(15, 20);
+            this.textBoxMessage.Multiline = true;
+            this.textBoxMessage.Name = "textBoxMessage";
+            this.textBoxMessage.Size = new System.Drawing.Size(903, 45);
+            this.textBoxMessage.TabIndex = 0;
+            // 
+            // flowLayoutGroups
+            // 
+            this.flowLayoutGroups.AutoScroll = true;
+            this.flowLayoutGroups.Location = new System.Drawing.Point(206, 88);
+            this.flowLayoutGroups.Name = "flowLayoutGroups";
+            this.flowLayoutGroups.Size = new System.Drawing.Size(341, 773);
+            this.flowLayoutGroups.TabIndex = 8;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.flowLayoutPanel1.Controls.Add(this.panel2);
+            this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanelMessage);
+            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.BottomUp;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(556, 88);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(1016, 668);
+            this.flowLayoutPanel1.TabIndex = 9;
+            this.flowLayoutPanel1.WrapContents = false;
+            // 
+            // panel2
+            // 
+            this.panel2.AutoSize = true;
+            this.panel2.Location = new System.Drawing.Point(3, 661);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(0, 0);
+            this.panel2.TabIndex = 0;
+            // 
+            // tableLayoutPanelMessage
+            // 
+            this.tableLayoutPanelMessage.AutoSize = true;
+            this.tableLayoutPanelMessage.ColumnCount = 2;
+            this.tableLayoutPanelMessage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelMessage.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelMessage.Location = new System.Drawing.Point(3, 655);
+            this.tableLayoutPanelMessage.MinimumSize = new System.Drawing.Size(1005, 0);
+            this.tableLayoutPanelMessage.Name = "tableLayoutPanelMessage";
+            this.tableLayoutPanelMessage.RowCount = 1;
+            this.tableLayoutPanelMessage.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanelMessage.Size = new System.Drawing.Size(1005, 0);
+            this.tableLayoutPanelMessage.TabIndex = 1;
+            // 
+            // Chatbox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1584, 861);
-            this.Controls.Add(this.buttonJoinClass);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.flowLayoutGroups);
+            this.Controls.Add(this.panelSend);
+            this.Controls.Add(this.panelName);
+            this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.labelClasses);
-            this.Controls.Add(this.buttonNotify);
-            this.Controls.Add(this.buttonProfile);
             this.MaximumSize = new System.Drawing.Size(1600, 900);
             this.MinimumSize = new System.Drawing.Size(1600, 900);
-            this.Name = "StudentClass";
+            this.Name = "Chatbox";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "StudentClass";
+            this.Text = "Chatbox";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panelTitle.ResumeLayout(false);
+            this.panelTitle.PerformLayout();
+            this.panelName.ResumeLayout(false);
+            this.panelName.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxAvatar)).EndInit();
+            this.panelSend.ResumeLayout(false);
+            this.panelSend.PerformLayout();
+            this.flowLayoutPanel1.ResumeLayout(false);
+            this.flowLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button buttonNotify;
-        private System.Windows.Forms.Button buttonProfile;
-        private System.Windows.Forms.Label labelClasses;
+
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button buttonSettings;
         private System.Windows.Forms.Button buttonNotes;
@@ -298,6 +396,18 @@ namespace learnIT.ClassForms
         private System.Windows.Forms.Button buttonDashboard;
         private System.Windows.Forms.Label learnIt;
         private System.Windows.Forms.Button buttonLogout;
-        private System.Windows.Forms.Button buttonJoinClass;
+        private System.Windows.Forms.Panel panelTitle;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panelName;
+        private System.Windows.Forms.Panel panelSend;
+        private System.Windows.Forms.Label labelChat;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutGroups;
+        private System.Windows.Forms.Label labelSubjectName;
+        private System.Windows.Forms.PictureBox pictureBoxAvatar;
+        private System.Windows.Forms.Button buttonSend;
+        private System.Windows.Forms.TextBox textBoxMessage;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelMessage;
     }
 }

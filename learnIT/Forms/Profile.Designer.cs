@@ -138,6 +138,7 @@ namespace learnIT.Forms
             this.buttonChat.Text = "Chat";
             this.buttonChat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonChat.UseVisualStyleBackColor = true;
+            this.buttonChat.Click += new System.EventHandler(this.buttonChat_Click);
             // 
             // buttonTask
             // 
@@ -156,6 +157,7 @@ namespace learnIT.Forms
             this.buttonTask.Text = "Tasks";
             this.buttonTask.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonTask.UseVisualStyleBackColor = true;
+            this.buttonTask.Click += new System.EventHandler(this.buttonTask_Click);
             // 
             // buttonClass
             // 

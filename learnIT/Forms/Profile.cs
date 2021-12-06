@@ -1,5 +1,7 @@
-﻿using learnIT.ClassForms;
+﻿using learnIT.ChatForms;
+using learnIT.ClassForms;
 using learnIT.Controller;
+using learnIT.TasksForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -89,16 +91,31 @@ namespace learnIT.Forms
             string role = User.Item4;
             if (role == "Admin")
             {
-                AdminClass form = new AdminClass(Id);
+                AdminClasses form = new AdminClasses(Id);
                 this.Hide();
                 form.ShowDialog();
             }
             else
             {
-                StudentClass form = new StudentClass(Id);
+                StudentClasses form = new StudentClasses(Id);
                 this.Hide();
                 form.ShowDialog();
             }
+        }
+
+        private void buttonTask_Click(object sender, EventArgs e)
+        {
+
+            TaskForm form = new TaskForm(Id);
+            this.Hide();
+            form.ShowDialog();
+        }
+
+        private void buttonChat_Click(object sender, EventArgs e)
+        {
+            Chatbox form = new Chatbox(Id);
+            this.Hide();
+            form.ShowDialog();
         }
     }
 }

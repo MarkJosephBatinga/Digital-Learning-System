@@ -18,8 +18,6 @@ C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\bin\Debu
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\bin\Debug\Dapper.dll
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\bin\Debug\Dapper.xml
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.csproj.AssemblyReference.cache
-C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.ClassForms.AdminClass.resources
-C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.ClassForms.StudentClass.resources
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.Forms.Dashboard.resources
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.Forms.EditProfile.resources
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.Forms.GettingStarted.resources
@@ -32,3 +30,15 @@ C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debu
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.exe
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.pdb
 C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.ClassForms.CreateClass.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.DialogForms.ValidateDeleteProfile.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.ClassForms.CreatedClass.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.DialogForms.JoinClassDialog.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.ClassForms.AdminClasses.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.ClassForms.StudentClasses.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.ClassForms.EditClass.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.ClassForms.StudentEnrolledClass.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.TasksForms.AdminTaskOverview.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.TasksForms.StudentTaskOverview.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.TasksForm.CreateTask.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.TasksForms.TaskForm.resources
+C:\Users\Mark Joseph Batinga\source\repos\digitalLearningSystem\learnIT\obj\Debug\learnIT.ChatForms.Chatbox.resources

@@ -43,9 +43,17 @@ namespace learnIT.Forms
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonNotify = new System.Windows.Forms.Button();
             this.buttonProfile = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.labelTasks = new System.Windows.Forms.Label();
+            this.flowLayoutPanelTasks = new System.Windows.Forms.FlowLayoutPanel();
+            this.labelClasses = new System.Windows.Forms.Label();
+            this.flowLayoutPanelClasses = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelDashbordName
@@ -53,7 +61,7 @@ namespace learnIT.Forms
             this.labelDashbordName.AutoSize = true;
             this.labelDashbordName.Font = new System.Drawing.Font("Raleway ExtraBold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDashbordName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
-            this.labelDashbordName.Location = new System.Drawing.Point(64, 41);
+            this.labelDashbordName.Location = new System.Drawing.Point(6, 41);
             this.labelDashbordName.Name = "labelDashbordName";
             this.labelDashbordName.Size = new System.Drawing.Size(416, 44);
             this.labelDashbordName.TabIndex = 0;
@@ -70,9 +78,10 @@ namespace learnIT.Forms
             this.panel1.Controls.Add(this.buttonDashboard);
             this.panel1.Controls.Add(this.learnIt);
             this.panel1.Controls.Add(this.buttonLogout);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(200, 862);
+            this.panel1.Size = new System.Drawing.Size(200, 861);
             this.panel1.TabIndex = 1;
             // 
             // buttonSettings
@@ -128,6 +137,7 @@ namespace learnIT.Forms
             this.buttonChat.Text = "Chat";
             this.buttonChat.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonChat.UseVisualStyleBackColor = true;
+            this.buttonChat.Click += new System.EventHandler(this.buttonChat_Click);
             // 
             // buttonTask
             // 
@@ -146,6 +156,7 @@ namespace learnIT.Forms
             this.buttonTask.Text = "Tasks";
             this.buttonTask.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.buttonTask.UseVisualStyleBackColor = true;
+            this.buttonTask.Click += new System.EventHandler(this.buttonTask_Click);
             // 
             // buttonClass
             // 
@@ -217,11 +228,12 @@ namespace learnIT.Forms
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(209)))), ((int)(((byte)(226)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.labelDashbordName);
-            this.panel2.Location = new System.Drawing.Point(248, 137);
+            this.panel2.Location = new System.Drawing.Point(210, 131);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(864, 256);
+            this.panel2.Size = new System.Drawing.Size(854, 256);
             this.panel2.TabIndex = 2;
             // 
             // pictureBox1
@@ -229,7 +241,7 @@ namespace learnIT.Forms
             this.pictureBox1.Image = global::learnIT.Properties.Resources.DS_Panel1;
             this.pictureBox1.Location = new System.Drawing.Point(560, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(304, 256);
+            this.pictureBox1.Size = new System.Drawing.Size(294, 256);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
@@ -243,7 +255,7 @@ namespace learnIT.Forms
             this.buttonNotify.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonNotify.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.buttonNotify.Image = global::learnIT.Properties.Resources.NotifButton;
-            this.buttonNotify.Location = new System.Drawing.Point(1389, 12);
+            this.buttonNotify.Location = new System.Drawing.Point(1196, 12);
             this.buttonNotify.Name = "buttonNotify";
             this.buttonNotify.Size = new System.Drawing.Size(79, 68);
             this.buttonNotify.TabIndex = 4;
@@ -259,7 +271,7 @@ namespace learnIT.Forms
             this.buttonProfile.Font = new System.Drawing.Font("Raleway", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
             this.buttonProfile.Image = global::learnIT.Properties.Resources.ProfileButton;
-            this.buttonProfile.Location = new System.Drawing.Point(1474, 12);
+            this.buttonProfile.Location = new System.Drawing.Point(1281, 12);
             this.buttonProfile.Name = "buttonProfile";
             this.buttonProfile.Size = new System.Drawing.Size(79, 68);
             this.buttonProfile.TabIndex = 3;
@@ -267,14 +279,75 @@ namespace learnIT.Forms
             this.buttonProfile.UseVisualStyleBackColor = true;
             this.buttonProfile.Click += new System.EventHandler(this.buttonProfile_Click);
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.buttonNotify);
+            this.panel3.Controls.Add(this.buttonProfile);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(200, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1384, 131);
+            this.panel3.TabIndex = 5;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.labelTasks);
+            this.panel4.Controls.Add(this.flowLayoutPanelTasks);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(1070, 131);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(514, 730);
+            this.panel4.TabIndex = 6;
+            // 
+            // labelTasks
+            // 
+            this.labelTasks.AutoSize = true;
+            this.labelTasks.Font = new System.Drawing.Font("Raleway ExtraBold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTasks.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.labelTasks.Location = new System.Drawing.Point(3, 262);
+            this.labelTasks.Name = "labelTasks";
+            this.labelTasks.Size = new System.Drawing.Size(253, 44);
+            this.labelTasks.TabIndex = 9;
+            this.labelTasks.Text = "Tasks Overview";
+            // 
+            // flowLayoutPanelTasks
+            // 
+            this.flowLayoutPanelTasks.AutoScroll = true;
+            this.flowLayoutPanelTasks.Location = new System.Drawing.Point(0, 318);
+            this.flowLayoutPanelTasks.Name = "flowLayoutPanelTasks";
+            this.flowLayoutPanelTasks.Size = new System.Drawing.Size(490, 303);
+            this.flowLayoutPanelTasks.TabIndex = 0;
+            // 
+            // labelClasses
+            // 
+            this.labelClasses.AutoSize = true;
+            this.labelClasses.Font = new System.Drawing.Font("Raleway ExtraBold", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelClasses.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(80)))), ((int)(((byte)(112)))));
+            this.labelClasses.Location = new System.Drawing.Point(206, 393);
+            this.labelClasses.Name = "labelClasses";
+            this.labelClasses.Size = new System.Drawing.Size(134, 44);
+            this.labelClasses.TabIndex = 8;
+            this.labelClasses.Text = "Classes";
+            // 
+            // flowLayoutPanelClasses
+            // 
+            this.flowLayoutPanelClasses.AutoScroll = true;
+            this.flowLayoutPanelClasses.Location = new System.Drawing.Point(200, 449);
+            this.flowLayoutPanelClasses.Name = "flowLayoutPanelClasses";
+            this.flowLayoutPanelClasses.Size = new System.Drawing.Size(864, 303);
+            this.flowLayoutPanelClasses.TabIndex = 9;
+            this.flowLayoutPanelClasses.WrapContents = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1584, 861);
-            this.Controls.Add(this.buttonNotify);
-            this.Controls.Add(this.buttonProfile);
+            this.Controls.Add(this.flowLayoutPanelClasses);
+            this.Controls.Add(this.labelClasses);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MaximumSize = new System.Drawing.Size(1600, 900);
@@ -287,7 +360,11 @@ namespace learnIT.Forms
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -307,5 +384,11 @@ namespace learnIT.Forms
         private System.Windows.Forms.Button buttonSettings;
         private System.Windows.Forms.Button buttonProfile;
         private System.Windows.Forms.Button buttonNotify;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label labelTasks;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelTasks;
+        private System.Windows.Forms.Label labelClasses;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelClasses;
     }
 }

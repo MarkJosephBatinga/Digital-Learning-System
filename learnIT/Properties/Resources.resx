@@ -118,61 +118,94 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="JoinClassButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\JoinClassButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DS_Panel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DS_Panel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ChatButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ChatButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="TaskButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TaskButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ProfileButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ProfileButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ClassButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClassButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NotifButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NotifButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BackButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pdf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pdf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeleteButtonPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeleteButtonPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NotesButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NotesButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BackButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BackButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="CreatedClassPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CreatedClassPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ClassCovers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ClassCovers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SignoutButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SignoutButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Login_Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Login_Pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="CreateClassButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\CreateClassButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ClassButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ClassButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="DashBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DashBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="GetStart_Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\GetStart_Pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="SettingButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\SettingButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Register_Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Register_Pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EditClassPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditClassPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SignoutButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SignoutButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="EditButtonPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EditButtonPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="group" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\group.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JoinClassButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JoinClassButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChatButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ProfileAvatar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ProfileAvatar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="CreateClassPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\CreateClassPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="JoinClassDialogPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\JoinClassDialogPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CreateTaskPic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CreateTaskPic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TaskButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TaskButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DeletePicture" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DeletePicture.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DS_Panel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DS_Panel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Login_Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Login_Pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DashBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DashBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CreateClassButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CreateClassButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Register_Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Register_Pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GetStart_Pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GetStart_Pic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProfileButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ProfileButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="send" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\send.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -50,11 +50,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClassForms\AdminClass.cs">
+    <Compile Include="ChatForms\Chatbox.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClassForms\AdminClass.Designer.cs">
-      <DependentUpon>AdminClass.cs</DependentUpon>
+    <Compile Include="ChatForms\Chatbox.Designer.cs">
+      <DependentUpon>Chatbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Chat\ChatDataAccess.cs" />
+    <Compile Include="ClassForms\AdminClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassForms\AdminClasses.Designer.cs">
+      <DependentUpon>AdminClasses.cs</DependentUpon>
     </Compile>
     <Compile Include="ClassForms\CreateClass.cs">
       <SubType>Form</SubType>
@@ -62,21 +69,57 @@
     <Compile Include="ClassForms\CreateClass.Designer.cs">
       <DependentUpon>CreateClass.cs</DependentUpon>
     </Compile>
-    <Compile Include="ClassForms\StudentClass.cs">
+    <Compile Include="ClassForms\CreatedClass.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ClassForms\StudentClass.Designer.cs">
-      <DependentUpon>StudentClass.cs</DependentUpon>
+    <Compile Include="ClassForms\CreatedClass.Designer.cs">
+      <DependentUpon>CreatedClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassForms\EditClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassForms\EditClass.Designer.cs">
+      <DependentUpon>EditClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassForms\StudentClasses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassForms\StudentClasses.Designer.cs">
+      <DependentUpon>StudentClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassForms\StudentEnrolledClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassForms\StudentEnrolledClass.Designer.cs">
+      <DependentUpon>StudentEnrolledClass.cs</DependentUpon>
     </Compile>
     <Compile Include="Class\ClassDataAccess.cs" />
+    <Compile Include="Class\GetClass.cs" />
     <Compile Include="Class\ValidateClass.cs" />
+    <Compile Include="Controller\DeleteData.cs" />
     <Compile Include="Controller\GetData.cs" />
     <Compile Include="Controller\Helper.cs" />
     <Compile Include="Controller\UserDataAccess.cs" />
     <Compile Include="Controller\ValidateNewData.cs" />
+    <Compile Include="Data\ChatData.cs" />
+    <Compile Include="Data\StudentClass.cs" />
+    <Compile Include="Data\StudentTask.cs" />
     <Compile Include="Data\UserClass.cs" />
     <Compile Include="Data\UserData.cs" />
     <Compile Include="Data\UserProfile.cs" />
+    <Compile Include="Data\UserTask.cs" />
+    <Compile Include="DialogForms\JoinClassDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogForms\JoinClassDialog.Designer.cs">
+      <DependentUpon>JoinClassDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogForms\ValidateDeleteProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogForms\ValidateDeleteProfile.Designer.cs">
+      <DependentUpon>ValidateDeleteProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,16 +163,64 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SqlQueries\ChatQuery.cs" />
     <Compile Include="SqlQueries\ClassQuery.cs" />
+    <Compile Include="SqlQueries\DeleteQuery.cs" />
     <Compile Include="SqlQueries\SendDataQuery.cs" />
-    <EmbeddedResource Include="ClassForms\AdminClass.resx">
-      <DependentUpon>AdminClass.cs</DependentUpon>
+    <Compile Include="SqlQueries\TaskQuery.cs" />
+    <Compile Include="TasksForms\AdminTaskOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TasksForms\AdminTaskOverview.Designer.cs">
+      <DependentUpon>AdminTaskOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TasksForms\CreateTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TasksForms\CreateTask.Designer.cs">
+      <DependentUpon>CreateTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TasksForms\StudentTaskOverview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TasksForms\StudentTaskOverview.Designer.cs">
+      <DependentUpon>StudentTaskOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TasksForms\TaskForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TasksForms\TaskForm.Designer.cs">
+      <DependentUpon>TaskForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tasks\GetTask.cs" />
+    <Compile Include="Tasks\TaskDataAccess.cs" />
+    <Compile Include="Tasks\ValidateTask.cs" />
+    <EmbeddedResource Include="ChatForms\Chatbox.resx">
+      <DependentUpon>Chatbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassForms\AdminClasses.resx">
+      <DependentUpon>AdminClasses.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClassForms\CreateClass.resx">
       <DependentUpon>CreateClass.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ClassForms\StudentClass.resx">
-      <DependentUpon>StudentClass.cs</DependentUpon>
+    <EmbeddedResource Include="ClassForms\CreatedClass.resx">
+      <DependentUpon>CreatedClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassForms\EditClass.resx">
+      <DependentUpon>EditClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassForms\StudentClasses.resx">
+      <DependentUpon>StudentClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassForms\StudentEnrolledClass.resx">
+      <DependentUpon>StudentEnrolledClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogForms\JoinClassDialog.resx">
+      <DependentUpon>JoinClassDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogForms\ValidateDeleteProfile.resx">
+      <DependentUpon>ValidateDeleteProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
@@ -152,6 +243,18 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TasksForms\AdminTaskOverview.resx">
+      <DependentUpon>AdminTaskOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TasksForms\CreateTask.resx">
+      <DependentUpon>CreateTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TasksForms\StudentTaskOverview.resx">
+      <DependentUpon>StudentTaskOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TasksForms\TaskForm.resx">
+      <DependentUpon>TaskForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -226,6 +329,40 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\JoinClassButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClassCovers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeletePicture.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeleteButtonPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditButtonPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreatedClassPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JoinClassDialogPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EditClassPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CreateTaskPic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

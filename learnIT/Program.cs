@@ -1,5 +1,8 @@
-﻿using learnIT.ClassForms;
+﻿using learnIT.ChatForms;
+using learnIT.ClassForms;
 using learnIT.Forms;
+using learnIT.TasksForm;
+using learnIT.TasksForms;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +19,6 @@ namespace learnIT
         [STAThread]
         static void Main()
         {
-            int id = 7;
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

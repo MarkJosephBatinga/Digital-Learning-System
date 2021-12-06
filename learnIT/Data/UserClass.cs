@@ -19,6 +19,6 @@ namespace learnIT.Data
         //Description
         public string class_description { get; set; }
         //Creator
-        public string class_creator { get; set; }
+        public int class_creator { get; set; }
     }
 }
